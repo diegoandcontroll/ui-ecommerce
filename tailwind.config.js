@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        gradient: '2px',
+      },
+      borderColor: {
+        gradien: 'linear-gradient(to right, #f7c9f8, #f28bfb)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
