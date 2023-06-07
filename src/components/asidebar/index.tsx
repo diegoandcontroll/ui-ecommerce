@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Sidebar() {
   return (
-    <div className="flex">
+    <div className="flex fixed">
       <div className="flex min-h-screen flex-col p-3 bg-slate-400 text-white shadow w-52">
-        <div className="">
+        <div className="flex-1">
           <div className="flex items-center">
             <h2 className="text-xl font-bold">Dashboard</h2>
           </div>

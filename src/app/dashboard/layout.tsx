@@ -10,10 +10,10 @@ export const metadata = {
 }
 const LayoutDashboard = ({ children }: LayoutDashProps) => {
   return (
-    <div className="flex flex-row">
+    <>
       <Sidebar />
       {children}
-    </div>
+    </>
   )
 }
 
