@@ -4,7 +4,7 @@ const ModalProduct = () => {
     <div className="flex-col justify-center items-center gap-2">
       <div className="flex flex-col space-y-2 w-72">
         <label htmlFor="name" className="text-white cursor-pointer">
-          Name
+          Name Product
         </label>
         <input
           id="name"

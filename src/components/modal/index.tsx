@@ -45,7 +45,7 @@ const Modal: React.FC<ModalProps> = ({
       onClick={handleOutsideClick}
     >
       <div
-        className="relative top-[-4rem] right-10 w-auto max-w-md mx-auto my-6 shadow-xl bg-slate-400 rounded-lg"
+        className="relative inset-0 right-10 w-auto max-w-md mx-auto my-6 shadow-xl bg-slate-400 rounded-lg"
         ref={modalRef}
       >
         <div className="p-6 ">

@@ -41,7 +41,7 @@ const SignUpComponent = () => {
               </div>
 
               <div className="text-center lg:text-left flex justify-end items-end gap-8 flex-col mt-4">
-                <Button>Login</Button>
+                <Button>Register</Button>
               </div>
             </form>
           </div>

@@ -1,18 +1,20 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 import { ComponentType, useState } from 'react'
-import { BsFillPencilFill } from 'react-icons/bs'
+import Button from '../form/button'
 import Modal from '../modal'
-interface ActionsUpdateWrapperProps {
+interface ActionsDeleteWrapsProps {
   title: string
+  text: string
   buttonText: string
   component: ComponentType
 }
-const ActionsUpdateWrapper = ({
+const ActionsNewWrapper = ({
   component: Element,
   buttonText,
   title,
-}: ActionsUpdateWrapperProps) => {
+  text,
+}: ActionsDeleteWrapsProps) => {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
 
   const handleOpenModal = () => {
@@ -24,11 +26,12 @@ const ActionsUpdateWrapper = ({
   }
   return (
     <>
-      <BsFillPencilFill
-        color="bg-white"
-        className="ml-4 cursor-pointer"
+      <Button
         onClick={handleOpenModal}
-      />
+        style={{ width: '250px', height: '45px', padding: '0px' }}
+      >
+        {text}
+      </Button>
       <Modal
         isOpen={modalOpen}
         onClose={handleCloseModal}
@@ -40,4 +43,4 @@ const ActionsUpdateWrapper = ({
   )
 }
 
-export default ActionsUpdateWrapper
+export default ActionsNewWrapper
