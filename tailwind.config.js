@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        sidebar: '300px auto',
+      },
+      gridTemplateRows: {
+        header: '64px auto',
+      },
       borderWidth: {
         gradient: '2px',
       },
