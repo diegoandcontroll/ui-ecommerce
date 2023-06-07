@@ -1,6 +1,8 @@
 import { CustomerType, ProductType } from '@/utils'
-import { BsFillPencilFill, BsFillTrashFill } from 'react-icons/bs'
-import ActionsDeleteWrapper from './actionsDeleteWrapper'
+
+import ModalProduct from '../modal/modalproduct'
+import ActionsDeleteWrapper from '../wrappers/actionsDeleteWrapper'
+import ActionsUpdateWrapper from '../wrappers/actionsUpdateWrapper'
 
 interface TableProps {
   categoryTd?: Array<{ id: string; name: string }>
@@ -45,13 +47,17 @@ const Table = ({
                   {categoryTh &&
                     categoryTh?.map((c) => (
                       <>
-                        <th scope="col" className="px-6 py-4">
+                        <th scope="col" className="px-6 py-4" key={c.labelId}>
                           {c.labelId}
                         </th>
-                        <th scope="col" className="px-6 py-4">
+                        <th scope="col" className="px-6 py-4" key={c.labelName}>
                           {c.labelName}
                         </th>
-                        <th scope="col" className="px-6 py-4">
+                        <th
+                          scope="col"
+                          className="px-6 py-4"
+                          key={c.labelActions}
+                        >
                           {c.labelActions}
                         </th>
                       </>
@@ -135,13 +141,14 @@ const Table = ({
                         </td>
                         <td className="whitespace-nowrap px-6 py-4">
                           <div className="flex justify-center items-center">
-                            <BsFillPencilFill
-                              color="bg-white"
-                              className="ml-4 cursor-pointer"
+                            <ActionsUpdateWrapper
+                              title="Editar produto"
+                              buttonText="Confirmar"
+                              component={ModalProduct}
                             />
-                            <BsFillTrashFill
-                              color="bg-white"
-                              className="ml-4 cursor-pointer"
+                            <ActionsDeleteWrapper
+                              title="Deseja remover o Produto?"
+                              buttonText="Confirmar"
                             />
                           </div>
                         </td>

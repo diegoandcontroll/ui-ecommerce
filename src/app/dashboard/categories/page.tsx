@@ -3,7 +3,7 @@ import { CategoriesTableStaticTr, CategoriesTableTh } from '@/utils'
 
 const Categories = () => {
   return (
-    <div className="px-44 py-20">
+    <div className="grid grid-cols-1 px-64 py-20">
       <div>Categories</div>
       <div>
         <h2>Table</h2>
