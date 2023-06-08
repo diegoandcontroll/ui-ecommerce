@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import AudioPlayer from '../audio'
 
 /* eslint-disable @next/next/no-img-element */
 const Navbar = () => {
@@ -103,6 +104,9 @@ const Navbar = () => {
                 loading="lazy"
               />
             </a>
+          </div>
+          <div className="pl-4 cursor-pointer">
+            <AudioPlayer audioUrl="https://upnow-prod.ff45e40d1a1c8f7e7de4e976d0c9e555.r2.cloudflarestorage.com/Xcsob6YGuzaPKhUdLB5GIdpJ0Fv1/2254ca80-b549-4117-ad0f-9f9f5881630f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=cdd12e35bbd220303957dc5603a4cc8e%2F20230608%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20230608T055201Z&X-Amz-Expires=43200&X-Amz-Signature=fb61db40d32f1d630d5859ce20027f9f874b8d3998c9476f8f0ae47458afb086&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Star%20Wars%20Main%20Theme%20%28Full%29%20%2864%20kbps%29.mp3%22" />
           </div>
         </div>
       </div>

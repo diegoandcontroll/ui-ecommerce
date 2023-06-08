@@ -54,7 +54,7 @@ export const ProductsTableStaticTr: Array<ProductType> = [
       'The iconic starfighter used by the Rebel Alliance in their fight against the Galactic Empire.',
     name: 'X-wing Fighter',
     price: 200.0,
-    imageUrl: 'https://test.btly.kt/1.png',
+    imageUrl: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
     category: {
       id: 'c3d80dfa-5e35-412c-b80b-a6c8a8906dec',
       name: 'Ships',
@@ -65,9 +65,9 @@ export const ProductsTableStaticTr: Array<ProductType> = [
     id: '2ee3b12b-9319-425d-b154-26d58829caa3',
     description:
       'The iconic starfighter used by the Rebel Alliance in their fight against the Galactic Empire.',
-    name: 'X-wing Fighter',
-    price: 200.0,
-    imageUrl: 'https://test.btly.kt/1.png',
+    name: 'X-wing Fighter 2',
+    price: 202.0,
+    imageUrl: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
     category: {
       id: 'c3d80dfa-5e35-412c-b80b-a6c8a8906dec',
       name: 'Ships',
@@ -78,9 +78,47 @@ export const ProductsTableStaticTr: Array<ProductType> = [
     id: '2ee3b12b-9319-425d-b154-26d58829caa3',
     description:
       'The iconic starfighter used by the Rebel Alliance in their fight against the Galactic Empire.',
+    name: 'X-wing Fighter 3',
+    price: 201.0,
+    imageUrl: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+    category: {
+      id: 'c3d80dfa-5e35-412c-b80b-a6c8a8906dec',
+      name: 'Ships',
+    },
+  },
+  {
+    id: '2ee3b12b-9319-425d-b154-26d58829caa3',
+    description:
+      'The iconic starfighter used by the Rebel Alliance in their fight against the Galactic Empire.',
     name: 'X-wing Fighter',
     price: 200.0,
-    imageUrl: 'https://test.btly.kt/1.png',
+    imageUrl: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+    category: {
+      id: 'c3d80dfa-5e35-412c-b80b-a6c8a8906dec',
+      name: 'Ships',
+    },
+  },
+
+  {
+    id: '2ee3b12b-9319-425d-b154-26d58829caa3',
+    description:
+      'The iconic starfighter used by the Rebel Alliance in their fight against the Galactic Empire.',
+    name: 'X-wing Fighter 2',
+    price: 202.0,
+    imageUrl: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
+    category: {
+      id: 'c3d80dfa-5e35-412c-b80b-a6c8a8906dec',
+      name: 'Ships',
+    },
+  },
+
+  {
+    id: '2ee3b12b-9319-425d-b154-26d58829caa3',
+    description:
+      'The iconic starfighter used by the Rebel Alliance in their fight against the Galactic Empire.',
+    name: 'X-wing Fighter 3',
+    price: 201.0,
+    imageUrl: 'https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg',
     category: {
       id: 'c3d80dfa-5e35-412c-b80b-a6c8a8906dec',
       name: 'Ships',
