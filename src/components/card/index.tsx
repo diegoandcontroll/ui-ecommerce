@@ -21,23 +21,21 @@ const Card = ({ description, imageUrl, title, price }: CardProps) => {
         </a>
       </div>
       <div className="p-6">
-        <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 text-center">
           {title}
         </h5>
-        <h6 className="mb-2 text-lg font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        <h6 className="mb-2 text-lg font-medium leading-tight text-neutral-800 dark:text-neutral-50 text-center">
           R$ - {price}
         </h6>
-        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200 text-center">
           {description}
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 justify-center items-center">
           <button className="flex items-center justify-center bg-gradient-to-r from-green-400 to-indigo-600 hover:from-green-600 hover:to-indigo-800 text-white rounded-lg px-4 py-2 transition-all duration-500 max-h-12 text-center hover:text-pink-500">
-            <FaShoppingCart className="mr-2 w-8 h-8" />
-            Carrinho
+            <FaShoppingCart className="mr-2 w-6 h-6" />
           </button>
           <button className="flex items-center justify-center bg-gradient-to-r from-green-400 to-indigo-600 hover:from-green-600 hover:to-indigo-800 text-white rounded-lg px-4 py-2 transition-all duration-500 max-h-12 hover:text-pink-500">
-            <FaHeart className="mr-2 w-8 h-8" />
-            Lista de Desejos
+            <FaHeart className="mr-2 w-6 h-6" />
           </button>
         </div>
       </div>
