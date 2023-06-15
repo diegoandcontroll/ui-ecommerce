@@ -1,5 +1,4 @@
 import Sidebar from '@/components/asidebar'
-import MiddlewareAdmin from '@/utils/middlewareAdmin'
 import { ReactNode } from 'react'
 
 interface LayoutDashProps {
@@ -12,10 +11,8 @@ export const metadata = {
 const LayoutDashboard = ({ children }: LayoutDashProps) => {
   return (
     <>
-      <MiddlewareAdmin>
-        <Sidebar />
-        {children}
-      </MiddlewareAdmin>
+      <Sidebar />
+      {children}
     </>
   )
 }
