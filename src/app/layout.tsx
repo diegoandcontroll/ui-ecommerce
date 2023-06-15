@@ -1,5 +1,6 @@
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
+import Providers from '@/contexts/Provider'
 import { Roboto } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
@@ -15,8 +16,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body className={`${roboto.className} bg-slate-900 text-white`}>
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
         <Footer />
       </body>
     </html>
