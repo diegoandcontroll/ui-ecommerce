@@ -1,10 +1,17 @@
+'use client'
+
+import { useSession } from 'next-auth/react'
+
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
+  const { data: session } = useSession()
+  console.log({ session })
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="max-w-4xl mx-auto  px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold  mb-4">
-          Bem-vindo à nossa loja de Star Wars!
+          Bem-vindo {session?.user && session?.user.customer.firstname} à nossa
+          loja de Star Wars!
         </h1>
         <p className="text-lg  mb-8">
           Explore a galáxia Star Wars com nossa incrível coleção de itens.
